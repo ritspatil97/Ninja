@@ -39,6 +39,7 @@ public class LoginTest extends Base{
 		loginPage.enterPassword(prop.getProperty("validpassword"));
 		AccountPage accountPage = loginPage.clickOnLoginButton();		
 		Assert.assertTrue(accountPage.verifyDisplayOfEditYourAccountInformationOption());
+		System.out.println("login success");
 
 	}
 	
